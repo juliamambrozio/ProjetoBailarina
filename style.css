@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Paytone One', sans-serif;
+    --fonte3:'Patrick Hand', cursive;
+
+    --cor1: #FF998A;
+    --cor2: #E4FF96;
+    --cor3: #FF7EC8;
+    --cor4: #63FFB6;
+    --cor5: #D370FF;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    background-color: rgb(233, 233, 233);
+}
+
+header{
+    background-color: var(--cor3);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header > h1{
+    font-family: var(--fonte2);
+    color: white;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.473);
+    font-size: 6vh;
+    
+}
+
+header > p{
+    font-family: var(--fonte1);
+    color: var(--cor2);
+    font-weight: bolder;
+}
+
+header > p >  a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+header > p > a:hover{
+    color: var(--cor4);
+
+}
+
+section{
+    padding: 30px;
+    font-size: 4vh;
+    font-family: var(--fonte3);
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section > p{
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+section.normal{
+    background-color: white;
+
+}
+
+section.imagem{
+    background-color: var(--cor1);
+}
+
+section.imagem  p{
+    background-color: #87ffc76b;
+    width: 350px;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+
+section#img1{
+    background-image: url('imagens/background1-pq.png');
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 1px 2px 21px 1px rgba(0, 0, 0, 0.418)
+}
+
+footer > p {
+    background-color: var(--cor3);
+    font-size: 15px;
+    font-family: var(--fonte1);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+footer > p > a{
+    font-family: var(--fonte1);
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    color:#63FFB6;
+    
+}
